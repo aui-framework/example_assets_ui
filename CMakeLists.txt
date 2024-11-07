@@ -1,6 +1,6 @@
 # Standard routine
 cmake_minimum_required(VERSION 3.16)
-project(project_template_ui)
+project(project_template_assets_ui)
 
 # Tip: in a production project don't use branch name, use a specific name tag (i.e. v1.1.1),
 # but for a sandbox project branch name is perfectly enough
@@ -25,3 +25,5 @@ aui_executable(${PROJECT_NAME})
 
 # Link required libs
 aui_link(${PROJECT_NAME} PRIVATE aui::core aui::views)
+
+aui_compile_assets(${PROJECT_NAME})
